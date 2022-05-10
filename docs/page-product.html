@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Каменный цветок</title>
+  <link rel="preload" href="fonts/BebasNeueRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/BebasNeueBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ProximaNovaRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ProximaNovaExtrabld.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <a href="#" class="header__logo">
+        <img loading="lazy" src="img/logo.svg" class="image" width="100" height="55" alt="Логотип Каменный цветок">
+      </a>
+      <div class="header-contacts">
+        <address class="header-contacts__address">
+          <svg class="header-contacts__icon">
+            <use xlink:href="img/sprite.svg#map"></use>
+          </svg>
+          <span class="header-contacts__text">г. Нижний Новгород, ул. Федосеенко, 45</span> </address>
+        <a href="mailto:plitkaikamen-nn@yandex.ru" class="header-contacts__mail">
+          <svg class="header-contacts__icon">
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <span class="header-contacts__text">plitkaikamen-nn@yandex.ru</span></span>
+        </a>
+        <a href="tel:+7956165757" class="header-contacts__tel">
+          <svg class="header-contacts__icon">
+            <use xlink:href="img/sprite.svg#tel"></use>
+          </svg>
+          <span class="header-contacts__text">+7 950 616-57-57</span>
+        </a>
+      </div>
+      <div class="lk">
+        <a href="#" class="lk__login">
+          <svg class="lk__icon-login">
+            <use xlink:href="img/sprite.svg#login"></use>
+          </svg>
+        </a>
+        <a href="#" class="lk__cart">
+          <svg class="lk__icon-cart">
+            <use xlink:href="img/sprite.svg#cart"></use>
+          </svg>
+          <span class="lk__cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container nav__container">
+        <nav class="nav" data-menu data-menu-overlay>
+          <ul class="list-reset nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Каталог товаров</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Акции</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Оплата и доставка</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="header__bottom-search">
+          <svg class="header__search">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </a>
+      </div>
+
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <section class="product">
+  <div class="container">
+    <ul class="list-reset breadcrumbs">
+      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Тротуарная плитка, брусчатка, бордюры
+          и водостоки</a>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Бетонная крупноформатная тротуарная плитка</a>
+      </li>
+    </ul>
+    <h1 class="category__title">Бетонопаркет «Каменная роза, большая»</h1>
+    <div class="product__wrapper">
+      <picture class="product__image">
+        <source srcset="../img/products-1.avif" type="image/avif">
+        <source srcset="../img/products-1.webp" type="image/webp">
+        <img loading="lazy" src="../img/products-1.png" class="image" width="520" height="400" alt="Продукт">
+      </picture>
+      <div class="product__parameter">
+        <h2 class="product-rigth__title">Характеристики</h2>
+        <p class="product-rigth__text">
+          Материал: <span class="product-rigth__subtext">Бетон</span>
+        </p>
+        <p class="product-rigth__text">
+          Вес: <span class="product-rigth__subtext">38 кг</span>
+        </p>
+        <p class="product-rigth__text">
+          Размеры:
+        </p>
+        <div class="product-checkbox__wrapper">
+          <label class="product-checkbox">
+            <input type="checkbox" class="product-checkbox__field">
+            <span class="product-checkbox__content product-checkbox__content--1"></span>
+          </label>
+          <label class="product-checkbox">
+            <input type="checkbox" class="product-checkbox__field">
+            <span class="product-checkbox__content product-checkbox__content--2"></span>
+          </label>
+          <label class="product-checkbox">
+            <input type="checkbox" class="product-checkbox__field">
+            <span class="product-checkbox__content product-checkbox__content--3"></span>
+          </label>
+          <label class="product-checkbox">
+            <input type="checkbox" class="product-checkbox__field">
+            <span class="product-checkbox__content product-checkbox__content--4"></span>
+          </label>
+          <label class="product-checkbox">
+            <input type="checkbox" class="product-checkbox__field">
+            <span class="product-checkbox__content product-checkbox__content--5"></span>
+          </label>
+          <button id="button-checkbox" class="btn-reset product__more">Показать ещё +</button>
+        </div>
+      </div>
+      <div class="product__option">
+        <h3 class="product__option-title">Доп. опции:</h3>
+        <p class="product__option-text">Выбор цвета:</p>
+        <div class="product-checkbox__wrapper">
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <label class="option-checkbox">
+            <input type="checkbox" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+          <button id="button" class="btn-reset product__more">Показать ещё +</button>
+        </div>
+        <div class="product__cart">
+          <label class="product-rigth__text">
+            Кол-во: <input type="text" class="product__cart-input"> шт
+          </label>
+          <p class="product__cart-price">
+            <span class="product__cart-price--sum-hid">Стоимость</span> 1 550 <span class="product__cart-price--text"> ₽</span></p>
+          <button class="btn-reset product__cart-btn">добавить в корзину</button>
+        </div>
+      </div>
+    </div>
+    <h3 class="product-descr__title">Описание</h3>
+    <p class="product-descr__text">Стабильно несколько раз в месяц мы слышим один и тот же вопрос: «Что делать,
+      если плитка потеряла эстетичный внешний вид, стала трескаться и крошиться?». Наш ответ: «Покупая плитку
+      у перекупщиков или недобросовестных производителей, вы получаете некачественный товар. Нарушая процесс
+      изготовления, используя дешёвые материалы, компании значительно снижают не только стоимость, но и качество
+      товара». Клиенты не могут отследить весь производственный процесс, поэтому лучшая проверка — это проверка
+      временем.</p>
+    <div class="product__identical">
+      <h2 class="product__identical-title">Похожие товары</h2>
+      <div class="swiper new__content">
+        <div class="new__btns">
+          <button class="btn-reset new__slider-btn new__slider-btn--prev"></button>
+          <button class="btn-reset new__slider-btn new__slider-btn--next"></button>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="cards__item">
+              <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+              <picture class="product__identical-img">
+                <source srcset="./img/products-1.avif" type="image/avif">
+                <source srcset="./img/products-1.webp" type="image/webp">
+                <img loading="lazy" src="./img/products-1.png" class="product__identical-img" width="294" height="244"
+                  alt="Накладная проступь 2ЛН16.2">
+              </picture>
+              <div class="cards__wrapper">
+                <div class="cards__desc">
+                  <p class="cards__desc-text">Размер: 1650×245×40</p>
+                  <p class="cards__desc-text">Вес: 38кг</p>
+                </div>
+                <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+              </div>
+              <button class="btn-reset cards__btn">Оформить заказ</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cards__item">
+              <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+              <picture class="product__identical-img">
+                <source srcset="./img/products-1.avif" type="image/avif">
+                <source srcset="./img/products-1.webp" type="image/webp">
+                <img loading="lazy" src="./img/products-1.png" class="product__identical-img" width="294" height="244"
+                  alt="Накладная проступь 2ЛН16.2">
+              </picture>
+              <div class="cards__wrapper">
+                <div class="cards__desc">
+                  <p class="cards__desc-text">Размер: 1650×245×40</p>
+                  <p class="cards__desc-text">Вес: 38кг</p>
+                </div>
+                <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+              </div>
+              <button class="btn-reset cards__btn">Оформить заказ</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cards__item">
+              <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+              <picture class="product__identical-img">
+                <source srcset="./img/products-1.avif" type="image/avif">
+                <source srcset="./img/products-1.webp" type="image/webp">
+                <img loading="lazy" src="./img/products-1.png" class="product__identical-img" width="294" height="244"
+                  alt="Накладная проступь 2ЛН16.2">
+              </picture>
+              <div class="cards__wrapper">
+                <div class="cards__desc">
+                  <p class="cards__desc-text">Размер: 1650×245×40</p>
+                  <p class="cards__desc-text">Вес: 38кг</p>
+                </div>
+                <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+              </div>
+              <button class="btn-reset cards__btn">Оформить заказ</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cards__item">
+              <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+              <picture class="product__identical-img">
+                <source srcset="./img/products-1.avif" type="image/avif">
+                <source srcset="./img/products-1.webp" type="image/webp">
+                <img loading="lazy" src="./img/products-1.png" class="product__identical-img" width="294" height="244"
+                  alt="Накладная проступь 2ЛН16.2">
+              </picture>
+              <div class="cards__wrapper">
+                <div class="cards__desc">
+                  <p class="cards__desc-text">Размер: 1650×245×40</p>
+                  <p class="cards__desc-text">Вес: 38кг</p>
+                </div>
+                <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+              </div>
+              <button class="btn-reset cards__btn">Оформить заказ</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cards__item">
+              <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+              <picture class="product__identical-img">
+                <source srcset="./img/products-1.avif" type="image/avif">
+                <source srcset="./img/products-1.webp" type="image/webp">
+                <img loading="lazy" src="./img/products-1.png" class="product__identical-img" width="294" height="244"
+                  alt="Накладная проступь 2ЛН16.2">
+              </picture>
+              <div class="cards__wrapper">
+                <div class="cards__desc">
+                  <p class="cards__desc-text">Размер: 1650×245×40</p>
+                  <p class="cards__desc-text">Вес: 38кг</p>
+                </div>
+                <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+              </div>
+              <button class="btn-reset cards__btn">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+        <div class="new__pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="map">
+  <div id="map" style="width: 100%; height: 620px"></div>
+</section>
+
+    <footer class="footer">
+  <div class="container">
+    <!-- <div class="footer__wrapper">
+      <a href="#" class="footer__logo">
+        <img loading="lazy" src="img/logo-footer.svg" class="image" width="100" height="55"
+          alt="Логотип Каменный цветок">
+      </a>
+      <div class="footer__right">
+        <div class="footer__nav">
+          <h3 class="footer__nav-title">Информация</h3>
+          <ul class="list-reset footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Сертификаты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Доставка</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Политика безопасности</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Условия соглашения</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h3 class="footer__nav-title">Служба поддержки</h3>
+          <ul class="list-reset footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Карта сайта</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Возврат товара</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h3 class="footer__nav-title">Дополнительно</h3>
+          <ul class="list-reset footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Акции</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav footer__nav--block">
+          <div class="footer__nav-img">
+            <h3 class="footer__nav-title">Возможность оплаты</h3>
+            <a href="#" class="footer__nav-link">
+              <picture>
+                <source srcset="./img/card-1.avif" type="image/avif">
+                <source srcset="./img/card-1.webp" type="image/webp">
+                <img loading="lazy" src="./img/card-1.png" class="image" width="32" height="10" alt="Карта">
+              </picture>
+            </a>
+            <a href="#" class="footer__nav-link">
+              <picture>
+                <source srcset="./img/card-2.avif" type="image/avif">
+                <source srcset="./img/card-2.webp" type="image/webp">
+                <img loading="lazy" src="./img/card-2.png" class="image" width="26" height="16" alt="Карта">
+              </picture>
+            </a>
+            <a href="#" class="footer__nav-link">
+              <picture>
+                <source srcset="./img/card-3.avif" type="image/avif">
+                <source srcset="./img/card-3.webp" type="image/webp">
+                <img loading="lazy" src="./img/card-3.png" class="image" width="26" height="16" alt="Карта">
+              </picture>
+            </a>
+            <a href="#" class="footer__nav-link">
+              <picture>
+                <source srcset="./img/card-4.avif" type="image/avif">
+                <source srcset="./img/card-4.webp" type="image/webp">
+                <img loading="lazy" src="./img/card-4.png" class="image" width="32" height="10" alt="Карта">
+              </picture>
+            </a>
+          </div>
+          <div class="footer__nav footer__nav">
+            <h3 class="footer__nav-title">Наш магазин в соц. сетях:</h3>
+            <a href="#" class="footer__nav-link-social">
+              <picture>
+                <source srcset="./img/inst.avif" type="image/avif">
+                <source srcset="./img/inst.webp" type="image/webp">
+                <img loading="lazy" src="./img/inst.png" class="image" width="24" height="24" alt="">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="footer__wrapper">
+      <a href="#" class="footer__logo">
+        <img loading="lazy" src="img/logo-footer.svg" class="image" width="100" height="55"
+          alt="Логотип Каменный цветок">
+      </a>
+      <div class="footer__nav">
+        <h3 class="footer__nav-title">Информация</h3>
+        <ul class="list-reset footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Сертификаты</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Доставка</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Политика безопасности</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Условия соглашения</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <h3 class="footer__nav-title">Служба поддержки</h3>
+        <ul class="list-reset footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Карта сайта</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Возврат товара</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <h3 class="footer__nav-title">Дополнительно</h3>
+        <ul class="list-reset footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Акции</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav footer__nav--block">
+        <div class="footer__nav-img">
+          <h3 class="footer__nav-title">Возможность оплаты</h3>
+          <a href="#" class="footer__nav-link">
+            <picture>
+              <source srcset="./img/card-1.avif" type="image/avif">
+              <source srcset="./img/card-1.webp" type="image/webp">
+              <img loading="lazy" src="./img/card-1.png" class="image" width="32" height="10" alt="Карта">
+            </picture>
+          </a>
+          <a href="#" class="footer__nav-link">
+            <picture>
+              <source srcset="./img/card-2.avif" type="image/avif">
+              <source srcset="./img/card-2.webp" type="image/webp">
+              <img loading="lazy" src="./img/card-2.png" class="image" width="26" height="16" alt="Карта">
+            </picture>
+          </a>
+          <a href="#" class="footer__nav-link">
+            <picture>
+              <source srcset="./img/card-3.avif" type="image/avif">
+              <source srcset="./img/card-3.webp" type="image/webp">
+              <img loading="lazy" src="./img/card-3.png" class="image" width="26" height="16" alt="Карта">
+            </picture>
+          </a>
+          <a href="#" class="footer__nav-link">
+            <picture>
+              <source srcset="./img/card-4.avif" type="image/avif">
+              <source srcset="./img/card-4.webp" type="image/webp">
+              <img loading="lazy" src="./img/card-4.png" class="image" width="32" height="10" alt="Карта">
+            </picture>
+          </a>
+        </div>
+        <div class="footer__nav footer__nav-soc">
+          <h3 class="footer__nav-title">Наш магазин в соц. сетях:</h3>
+          <a href="#" class="footer__nav-link-social">
+            <picture>
+              <source srcset="./img/inst.avif" type="image/avif">
+              <source srcset="./img/inst.webp" type="image/webp">
+              <img loading="lazy" src="./img/inst.png" class="image" width="24" height="24" alt="">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__link">Все права защищены © 2022</span>
+      <a href="#" class="footer__link">Публичная оферта</a>
+      <a href="#" class="footer__link">
+        <span class="footer__link-text">Разработка сайтов</span>
+        <svg class="footer__artix">
+          <use xlink:href="img/sprite.svg#artix"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>

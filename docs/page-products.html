@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Каменный цветок</title>
+  <link rel="preload" href="fonts/BebasNeueRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/BebasNeueBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ProximaNovaRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ProximaNovaExtrabld.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <a href="#" class="header__logo">
+        <img loading="lazy" src="img/logo.svg" class="image" width="100" height="55" alt="Логотип Каменный цветок">
+      </a>
+      <div class="header-contacts">
+        <address class="header-contacts__address">
+          <svg class="header-contacts__icon">
+            <use xlink:href="img/sprite.svg#map"></use>
+          </svg>
+          <span class="header-contacts__text">г. Нижний Новгород, ул. Федосеенко, 45</span> </address>
+        <a href="mailto:plitkaikamen-nn@yandex.ru" class="header-contacts__mail">
+          <svg class="header-contacts__icon">
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <span class="header-contacts__text">plitkaikamen-nn@yandex.ru</span></span>
+        </a>
+        <a href="tel:+7956165757" class="header-contacts__tel">
+          <svg class="header-contacts__icon">
+            <use xlink:href="img/sprite.svg#tel"></use>
+          </svg>
+          <span class="header-contacts__text">+7 950 616-57-57</span>
+        </a>
+      </div>
+      <div class="lk">
+        <a href="#" class="lk__login">
+          <svg class="lk__icon-login">
+            <use xlink:href="img/sprite.svg#login"></use>
+          </svg>
+        </a>
+        <a href="#" class="lk__cart">
+          <svg class="lk__icon-cart">
+            <use xlink:href="img/sprite.svg#cart"></use>
+          </svg>
+          <span class="lk__cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container nav__container">
+        <nav class="nav" data-menu data-menu-overlay>
+          <ul class="list-reset nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Каталог товаров</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Акции</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Оплата и доставка</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="header__bottom-search">
+          <svg class="header__search">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </a>
+      </div>
+
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <section class="products">
+  <div class="container">
+    <ul class="list-reset breadcrumbs">
+      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Тротуарная плитка, брусчатка, бордюры
+          и водостоки</a>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Бетонная крупноформатная тротуарная плитка</a>
+      </li>
+    </ul>
+    <h1 class="category__title">Бетонная крупноформатная тротуарная плитка</h1>
+    <div class="sort">
+      <span class="sort__text">Сортировать по:</span>
+      <div class="sort__desr">
+        <button class="btn-reset sort__btn active">алфавиту</button>
+        <button class="btn-reset sort__btn">цене</button>
+      </div>
+    </div>
+    <ul class="list-reset cards">
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+      <li class="cards__item">
+        <h2 class="cards__title">Бетонопаркет «Каменная роза, большая»</h2>
+        <picture>
+          <source srcset="./img/products-1.avif" type="image/avif">
+          <source srcset="./img/products-1.webp" type="image/webp">
+          <img loading="lazy" src="./img/products-1.png" class="catalog-cards__image" width="294" height="244"
+            alt="Накладная проступь 2ЛН16.2">
+        </picture>
+        <div class="cards__wrapper">
+          <div class="cards__desc">
+            <p class="cards__desc-text">Размер: 1650×245×40</p>
+            <p class="cards__desc-text">Вес: 38кг</p>
+          </div>
+          <div class="cards__price">1 550 <span class="cards__price--text">₽</span> </div>
+        </div>
+        <button class="btn-reset cards__btn">Оформить заказ</button>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+    <section class="map">
+  <div id="map" style="width: 100%; height: 620px"></div>
+</section>
+
+    <footer class="footer">
+  <div class="container">
+    <!-- <div class="footer__wrapper">
+      <a href="#" class="footer__logo">
+        <img loading="lazy" src="img/logo-footer.svg" class="image" width="100" height="55"
+          alt="Логотип Каменный цветок">
+      </a>
+      <div class="footer__right">
+        <div class="footer__nav">
+          <h3 class="footer__nav-title">Информация</h3>
+          <ul class="list-reset footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Сертификаты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Доставка</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Политика безопасности</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Условия соглашения</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h3 class="footer__nav-title">Служба поддержки</h3>
+          <ul class="list-reset footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Карта сайта</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Возврат товара</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h3 class="footer__nav-title">Дополнительно</h3>
+          <ul class="list-reset footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Акции</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav footer__nav--block">
+          <div class="footer__nav-img">
+            <h3 class="footer__nav-title">Возможность оплаты</h3>
+            <a href="#" class="footer__nav-link">
+              <picture>
+                <source srcset="./img/card-1.avif" type="image/avif">
+                <source srcset="./img/card-1.webp" type="image/webp">
+                <img loading="lazy" src="./img/card-1.png" class="image" width="32" height="10" alt="Карта">
+              </picture>
+            </a>
+            <a href="#" class="footer__nav-link">
+              <picture>
+                <source srcset="./img/card-2.avif" type="image/avif">
+                <source srcset="./img/card-2.webp" type="image/webp">
+                <img loading="lazy" src="./img/card-2.png" class="image" width="26" height="16" alt="Карта">
+              </picture>
+            </a>
+            <a href="#" class="footer__nav-link">
+              <picture>
+                <source srcset="./img/card-3.avif" type="image/avif">
+                <source srcset="./img/card-3.webp" type="image/webp">
+                <img loading="lazy" src="./img/card-3.png" class="image" width="26" height="16" alt="Карта">
+              </picture>
+            </a>
+            <a href="#" class="footer__nav-link">
+              <picture>
+                <source srcset="./img/card-4.avif" type="image/avif">
+                <source srcset="./img/card-4.webp" type="image/webp">
+                <img loading="lazy" src="./img/card-4.png" class="image" width="32" height="10" alt="Карта">
+              </picture>
+            </a>
+          </div>
+          <div class="footer__nav footer__nav">
+            <h3 class="footer__nav-title">Наш магазин в соц. сетях:</h3>
+            <a href="#" class="footer__nav-link-social">
+              <picture>
+                <source srcset="./img/inst.avif" type="image/avif">
+                <source srcset="./img/inst.webp" type="image/webp">
+                <img loading="lazy" src="./img/inst.png" class="image" width="24" height="24" alt="">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="footer__wrapper">
+      <a href="#" class="footer__logo">
+        <img loading="lazy" src="img/logo-footer.svg" class="image" width="100" height="55"
+          alt="Логотип Каменный цветок">
+      </a>
+      <div class="footer__nav">
+        <h3 class="footer__nav-title">Информация</h3>
+        <ul class="list-reset footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Сертификаты</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Доставка</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Политика безопасности</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Условия соглашения</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <h3 class="footer__nav-title">Служба поддержки</h3>
+        <ul class="list-reset footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Карта сайта</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Возврат товара</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <h3 class="footer__nav-title">Дополнительно</h3>
+        <ul class="list-reset footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Акции</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav footer__nav--block">
+        <div class="footer__nav-img">
+          <h3 class="footer__nav-title">Возможность оплаты</h3>
+          <a href="#" class="footer__nav-link">
+            <picture>
+              <source srcset="./img/card-1.avif" type="image/avif">
+              <source srcset="./img/card-1.webp" type="image/webp">
+              <img loading="lazy" src="./img/card-1.png" class="image" width="32" height="10" alt="Карта">
+            </picture>
+          </a>
+          <a href="#" class="footer__nav-link">
+            <picture>
+              <source srcset="./img/card-2.avif" type="image/avif">
+              <source srcset="./img/card-2.webp" type="image/webp">
+              <img loading="lazy" src="./img/card-2.png" class="image" width="26" height="16" alt="Карта">
+            </picture>
+          </a>
+          <a href="#" class="footer__nav-link">
+            <picture>
+              <source srcset="./img/card-3.avif" type="image/avif">
+              <source srcset="./img/card-3.webp" type="image/webp">
+              <img loading="lazy" src="./img/card-3.png" class="image" width="26" height="16" alt="Карта">
+            </picture>
+          </a>
+          <a href="#" class="footer__nav-link">
+            <picture>
+              <source srcset="./img/card-4.avif" type="image/avif">
+              <source srcset="./img/card-4.webp" type="image/webp">
+              <img loading="lazy" src="./img/card-4.png" class="image" width="32" height="10" alt="Карта">
+            </picture>
+          </a>
+        </div>
+        <div class="footer__nav footer__nav-soc">
+          <h3 class="footer__nav-title">Наш магазин в соц. сетях:</h3>
+          <a href="#" class="footer__nav-link-social">
+            <picture>
+              <source srcset="./img/inst.avif" type="image/avif">
+              <source srcset="./img/inst.webp" type="image/webp">
+              <img loading="lazy" src="./img/inst.png" class="image" width="24" height="24" alt="">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__link">Все права защищены © 2022</span>
+      <a href="#" class="footer__link">Публичная оферта</a>
+      <a href="#" class="footer__link">
+        <span class="footer__link-text">Разработка сайтов</span>
+        <svg class="footer__artix">
+          <use xlink:href="img/sprite.svg#artix"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
