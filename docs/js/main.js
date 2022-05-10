@@ -227,14 +227,26 @@ if (product) {
 
     if (window.innerWidth <= 576) {
       count = 3;
+
+      if (items.length <= 3) {
+        button.style.display = "none";
+      }
     }
 
     if (window.innerWidth >= 576 && window.innerWidth <= 1921) {
       count = 13;
+
+      if (items.length <= 3) {
+        button.style.display = "none";
+      }
     }
 
     if (window.innerWidth >= 1921) {
       count = 15;
+
+      if (items.length <= 3) {
+        button.style.display = "none";
+      }
     }
 
     if (window.innerWidth >= 2048) {
@@ -288,14 +300,26 @@ if (product) {
 
     if (window.innerWidth <= 576) {
       countCh = 3;
+
+      if (itemsCh.length <= 3) {
+        button.style.display = "none";
+      }
     }
 
     if (window.innerWidth >= 576 && window.innerWidth <= 1921) {
       countCh = 13;
+
+      if (itemsCh.length <= 3) {
+        button.style.display = "none";
+      }
     }
 
     if (window.innerWidth >= 1921) {
       countCh = 15;
+
+      if (itemsCh.length <= 3) {
+        button.style.display = "none";
+      }
     }
 
     if (window.innerWidth >= 2048) {
