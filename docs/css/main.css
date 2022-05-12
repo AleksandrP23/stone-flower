@@ -238,6 +238,7 @@ a {
   .balloon__list {
     font-size: 18px;
     line-height: 22px;
+    width: 272px;
   }
 }
 .balloon__link {
@@ -580,8 +581,8 @@ a {
 }
 .header__bottom {
   background-color: var(--bg-nav-color);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 22px;
   position: absolute;
   top: 72px;
   left: 0;
