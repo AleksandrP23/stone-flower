@@ -63,7 +63,19 @@
       <div class="container nav__container">
         <nav class="nav" data-menu data-menu-overlay>
           <ul class="list-reset nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Каталог товаров</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Каталог товаров</a>
+              <ul class="list-reset nav__list-second">
+                <li class="nav__item-second">
+                  <a href="#" class="nav__link-second">Тротуарная плитка, брусчатка, бордюры и водостоки</a>
+                </li>
+                <li class="nav__item-second">
+                  <a href="#" class="nav__link-second">Тротуарная плитка, брусчатка, бордюры и водостоки</a>
+                </li>
+                <li class="nav__item-second">
+                  <a href="#" class="nav__link-second">Тротуарная плитка, брусчатка, бордюры и водостоки</a>
+                </li>
+              </ul>
+            </li>
             <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
@@ -72,11 +84,12 @@
             <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
-        <a href="#" class="header__bottom-search">
+        <form action="" class="header-search">
+          <input type="search" class="header-search__input">
           <svg class="header__search">
             <use xlink:href="img/sprite.svg#search"></use>
           </svg>
-        </a>
+        </form>
       </div>
 
       <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>

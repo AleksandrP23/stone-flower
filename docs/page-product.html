@@ -63,7 +63,19 @@
       <div class="container nav__container">
         <nav class="nav" data-menu data-menu-overlay>
           <ul class="list-reset nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Каталог товаров</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Каталог товаров</a>
+              <ul class="list-reset nav__list-second">
+                <li class="nav__item-second">
+                  <a href="#" class="nav__link-second">Тротуарная плитка, брусчатка, бордюры и водостоки</a>
+                </li>
+                <li class="nav__item-second">
+                  <a href="#" class="nav__link-second">Тротуарная плитка, брусчатка, бордюры и водостоки</a>
+                </li>
+                <li class="nav__item-second">
+                  <a href="#" class="nav__link-second">Тротуарная плитка, брусчатка, бордюры и водостоки</a>
+                </li>
+              </ul>
+            </li>
             <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
@@ -72,11 +84,12 @@
             <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
-        <a href="#" class="header__bottom-search">
+        <form action="" class="header-search">
+          <input type="search" class="header-search__input">
           <svg class="header__search">
             <use xlink:href="img/sprite.svg#search"></use>
           </svg>
-        </a>
+        </form>
       </div>
 
       <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
@@ -115,23 +128,23 @@
         </p>
         <div class="product-checkbox__wrapper">
           <label class="product-checkbox">
-            <input type="checkbox" class="product-checkbox__field">
+            <input type="radio" name="size" class="product-checkbox__field">
             <span class="product-checkbox__content product-checkbox__content--1"></span>
           </label>
           <label class="product-checkbox">
-            <input type="checkbox" class="product-checkbox__field">
+            <input type="radio" name="size" class="product-checkbox__field">
             <span class="product-checkbox__content product-checkbox__content--2"></span>
           </label>
           <label class="product-checkbox">
-            <input type="checkbox" class="product-checkbox__field">
+            <input type="radio" name="size" class="product-checkbox__field">
             <span class="product-checkbox__content product-checkbox__content--3"></span>
           </label>
           <label class="product-checkbox">
-            <input type="checkbox" class="product-checkbox__field">
+            <input type="radio" name="size" class="product-checkbox__field">
             <span class="product-checkbox__content product-checkbox__content--4"></span>
           </label>
           <label class="product-checkbox">
-            <input type="checkbox" class="product-checkbox__field">
+            <input type="radio" name="size" class="product-checkbox__field">
             <span class="product-checkbox__content product-checkbox__content--5"></span>
           </label>
           <button id="button-checkbox" class="btn-reset product__more">Показать ещё +</button>
@@ -142,173 +155,181 @@
         <p class="product__option-text">Выбор цвета:</p>
         <div class="product-checkbox__wrapper">
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
           <label class="option-checkbox">
-            <input type="checkbox" class="option-checkbox__field">
+            <input type="radio" name="color" class="option-checkbox__field">
             <p class="option-checkbox__content">
               <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
               </span>
             </p>
           </label>
+          <label class="option-checkbox">
+            <input type="radio" name="color" class="option-checkbox__field">
+            <p class="option-checkbox__content">
+              <span class="option-checkbox__content-text"> + 100 <span class="option-checkbox__content--cash">₽</span>
+              </span>
+            </p>
+          </label>
+
           <button id="button" class="btn-reset product__more">Показать ещё +</button>
         </div>
         <div class="product__cart">

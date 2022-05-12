@@ -204,9 +204,12 @@ ymaps.ready(init);
 /***/ (() => {
 
 var form = document.querySelector('.shop-form__wrapper');
-var telSelector = form.querySelector('input[type="tel"]');
-var inputMask = new Inputmask('+7 (999) 999-99-99');
-inputMask.mask(telSelector);
+
+if (form) {
+  var telSelector = form.querySelector('input[type="tel"]');
+  var inputMask = new Inputmask('+7 (999) 999-99-99');
+  inputMask.mask(telSelector);
+}
 
 /***/ }),
 
