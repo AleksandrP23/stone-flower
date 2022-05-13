@@ -2700,6 +2700,11 @@ a {
     height: 69px;
   }
 }
+@media (max-width: 576px) {
+  .option-checkbox__content--cash {
+    font-size: 12px;
+  }
+}
 .option-checkbox__content-text {
   position: absolute;
   left: 10%;
